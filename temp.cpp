@@ -112,17 +112,23 @@ void _print(map<T, V> v)
  * cout << (1ll << cnt0) * (ll)cnt1 << '\n';
  *
  * 2. When get tle try changing unordered_map to map
+ *
+ * 3. Try to look if there is any relation between the input and the output ,for example n and  * k are given and the answer string median is n*k , the array is given and the answer is        -1 * sum(of the entire array)
+ *
+ * 4. In the question suffixes and prefixes of a string was given and asked if the original     * string will be a palindrome or not, so instead of finding out the original string focus on
+ * how we can check whether it's a palindrome or not, in short focus on what's being asked
  */
 
 void solve(ll t)
 {
     ll n;
     cin >> n;
-    vector<ll> v(n);
+    vector<ll> a(n);
+    vector<ll> b(n);
     for (ll i = 0; i < n; i++)
-    {
-        cin >> v[i];
-    }
+        cin >> a[i];
+    for (ll i = 0; i < n; i++)
+        cin >> b[i];
 }
 
 int main()
